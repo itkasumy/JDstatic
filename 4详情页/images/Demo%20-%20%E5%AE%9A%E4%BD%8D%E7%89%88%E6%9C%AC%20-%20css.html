@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- saved from url=(0229)http://localhost:63342/Day13/%E8%AF%BE%E5%A0%82%E6%A1%88%E4%BE%8B/%E5%90%84%E7%A7%8Dcss/1%E6%89%8B%E9%A3%8E%E7%90%B4%E7%89%B9%E6%95%88/Demo%20-%20%E5%AE%9A%E4%BD%8D%E7%89%88%E6%9C%AC%20-%20css.html?_ijt=85d54p8djhb7428f3l7rjnmtql -->
+<html><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title></title>
+  <style>
+    ul {
+      list-style: none
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    div {
+      position: relative;
+      width: 1200px;
+      height: 400px;
+      margin: 50px auto;
+      border: 1px solid red;
+      overflow: hidden;
+    }
+    
+    div li {
+      width: 1200px;
+      height: 400px;
+      /*float: left;*/
+      position: absolute;
+    }
+    
+    div ul {
+      width: 1200px;
+    }
+  
+  
+  </style>
+</head>
+<body>
+<div id="box">
+  <ul>
+    <li style="background-image: url(&quot;images/1.jpg&quot;); left: 0px;"></li>
+    <li style="background-image: url(&quot;images/2.jpg&quot;); left: 100px;"></li>
+    <li style="background-image: url(&quot;images/3.jpg&quot;); left: 200px;"></li>
+    <li style="background-image: url(&quot;images/4.jpg&quot;); left: 1000px;"></li>
+    <li style="background-image: url(&quot;images/5.jpg&quot;); left: 1100px;"></li>
+  </ul>
+</div>
+<script src="./Demo%20-%20%E5%AE%9A%E4%BD%8D%E7%89%88%E6%9C%AC%20-%20css_files/tools.js.下载"></script>
+<script>
+  //设置li的背景
+  var box = document.getElementById("box");
+  var list = box.children[0];
+  var lis = list.children;
+  
+  //设置图片
+  for (var i = 0; i < lis.length; i++) {
+    lis[i].style.backgroundImage = "url(images/" + (i + 1) + ".jpg)";
+    //设置的定位值是i*240
+    lis[i].style.left = i * 240 + "px";
+    
+    //设置一个索引值
+    lis[i].index = i;
+    //移入事件
+    lis[i].onmouseover = function () {
+      //取出所有人
+      for (var i = 0; i < lis.length; i++) {
+        //检测索引值
+        if (i <= this.index) {
+          animate(lis[i], {"left": i * 100});
+        } else {
+          animate(lis[i], {"left": i * 100 + 700});
+        }
+      }
+    };
+    
+    lis[i].onmouseout = function () {
+      for (var i = 0; i < lis.length; i++) {
+        animate(lis[i], {"left": 240 * i});
+      }
+    }
+    
+    
+  }
+
+
+</script>
+
+
+</body></html>

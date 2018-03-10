@@ -1,0 +1,154 @@
+@charset "UTF-8";
+.bg-ad {
+    /*width: 100%;*/
+    /*height: 600px;*/
+    position: relative;
+}
+
+.bg-ad a {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    display: inline-block;
+    background: url("../img/banner-bg.jpg") center;
+}
+
+.main {
+    position: relative;
+    margin-top: 10px;
+}
+
+.main .main-l {
+    width: 730px;
+    height: 445px;
+    margin-left: 220px;
+    position: relative;
+    float: left;
+}
+
+.main .main-l .arr {
+    position: absolute;
+    width: 730px;
+    top: 50%;
+    margin-top: -30px;
+}
+
+.main .main-l .arr span {
+    opacity: 0.7;
+    width: 30px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    display: inline-block;
+    background-color: #CCCCCC;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.main-l .right {
+    float: right;
+}
+
+.main-l .list {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    margin-right: -60px;
+
+}
+
+.main-l .list li {
+    float: left;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    margin-right: 5px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.main .main-r {
+    border: 1px solid #e4e4e4;
+    width: 248px;
+    height: 372px;
+    float: left;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.main-r .up {
+    width: 238px;
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px dotted #e4e4e4;
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    color: #666;
+}
+
+.main-r .up span {
+    font-family: consola;
+    font-size: 12px;
+    float: right;
+    padding-right: 10px;
+}
+
+.main-r .news {
+    width: 238px;
+    height: 123px;
+    padding-left: 10px;
+    padding-top: 7px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.main-r .news li {
+    line-height: 24px;
+    color: #666;
+}
+
+.main-r .img-list {
+    width: 252px;
+}
+
+.main-r .img-list div {
+    padding-top: 50px;
+    width: 62px;
+    height: 20px;
+    border-bottom: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.img-list i {
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    background: url(../img/rside.png);
+    position: absolute;
+    top: 15px;
+}
+
+.main .bottom-img {
+    margin-top: 10px;
+}
+
+.main .down-img img {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 250px;
+}
+
+.main .bottom-img div {
+    float: left;
+}
+
+.main .bottom-img .r-side img {
+    float: left;
+    margin-right: 1px;
+    width: 249px;
+}

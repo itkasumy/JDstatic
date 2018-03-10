@@ -1,0 +1,507 @@
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+/*禁止手动修改大小*/
+textarea {
+    resize: none;
+}
+/*去掉图片底部默认空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+/*合并外连线*/
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53"; /*unitedCode的写法，宋体的写法*/
+    color: #666;
+    background: #fff;
+}
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+/*京东主色调*/
+.col-red {
+    color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+    /*版心*/
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+.pr {
+    position: relative;
+}
+.pa {
+    position: absolute;
+}
+
+.hide {
+    display: none;
+}
+
+/*css初始化完成*/
+
+
+
+.shortcut {
+    height: 30px;
+    line-height: 30px;
+    background-color: #F1F1F1;
+}
+.shortcut_left {
+    padding: 0 26px 0 9px;
+    position: relative;
+    cursor: pointer;
+    border-left: 1px solid #F1F1F1;
+    border-right: 1px solid #F1F1F1;
+}
+.shortcut_left:hover {
+    padding: 0 26px 0 9px;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    background-color: #fff;
+}
+.shortcut_left:hover .shortcut-left-detail-list {
+    display: block;
+}
+.shortcut_left .shortcut-left-detail-list {
+    position: absolute;
+    width: 301px;
+    height: 220px;
+    background-color: #fff;
+    border: 1px solid #DDDDDD;
+    z-index: 5;
+    top: 30px;
+    left: -1px;
+    padding: 12px 10px;
+    display: none;
+}
+.shortcut_left .shortcut-left-detail-list ul {
+    width: 317px;
+}
+.shortcut_left .shortcut-left-detail-list li {
+    float: left;
+    padding: 6px 8px;
+    line-height: 12px;
+    margin: 0 20px 4px 0;
+}
+.shortcut_left .shortcut-left-detail-list li:hover {
+    background-color: #F1F1F1;
+}
+.shortcut_left .shortcut-left-detail-list li.mogu {
+    margin-left: -12px;
+}
+.shortcut_left .shortcut-left-detail-list li.current {
+    background-color: #C81623;
+}
+.shortcut_left .shortcut-left-detail-list li.current a {
+    color: #ffffff;
+}
+.shortcut_left .shortcut-left-detail-list .space {
+    width: 95px;
+    height: 5px;
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    background-color: #fff;
+}
+.shortcut_left:hover .dropdown s {
+    top: -1px;
+}
+.dropdown {
+    position: absolute;
+    width: 12px;
+    height: 6px;
+    line-height: 12px;
+    top: 12px;
+    right: 10px;
+    overflow: hidden;
+}
+.dropdown s {
+    position: absolute;
+    top: -6px;
+    left: 0;
+    font-family: consolas;
+}
+.shortcut_right li {
+    float: left;
+    padding: 0 10px;
+}
+.shortcut_right li.line {
+    padding: 0;
+    border-right: 1px solid #DDDDDD;
+    height: 12px;
+    margin-top: 9px;
+}
+.shortcut_right li.drop {
+    position: relative;
+    padding-right: 29px;
+}
+li.drop:hover .dropdown s {
+    top: -1px;
+}
+.shortcut_right li.phone {
+    padding-left: 27px;
+}
+.shortcut_right li.phone span {
+    position: absolute;
+    width: 15px;
+    height: 20px;
+    top: 5px;
+    left: 9px;
+    background: url("../images/sprite.png");
+}
+.shortcut_right li.phone:hover span {
+    background-position: 0 -25px;
+}
+/*banner*/
+.banner {
+    height: 80px;
+    background-color: #1879EC;
+}
+.banner .w {
+    position: relative;
+}
+.banner .close {
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    right: 5px;
+    top: 4px;
+    background: url("../images/close.png");
+    cursor: pointer;
+}
+.banner .close:hover {
+    background-position: 0 -19px;
+}
+/*banner结束*/
+/*search开始*/
+.searchBar {
+    padding-top: 25px;
+    height: 75px;
+}
+.logo {
+    width: 270px;
+    height: 60px;
+    background: url("../images/logo.png");
+}
+.logo a {
+    width: 270px;
+    height: 60px;
+    display: block;
+    text-indent: -2000em;
+    overflow: hidden;
+}
+.search {
+    width: 538px;
+    height: 36px;
+    margin-left: 92px;
+}
+.search input {
+    width: 450px;
+    height: 32px;
+    border: 2px solid #B61D1D;
+    padding-left: 4px;
+    border-right: 0 none;
+    color: #666666;
+    font-family: "microsoft yahei";
+}
+.search button {
+    width: 82px;
+    height: 36px;
+    background-color: #B61D1D;
+    font-family: "microsoft yahei";
+    font-size: 16px;
+    color: #ffffff;
+}
+.cart {
+    width: 139px;
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid #DFDFDF;
+    background-color: #F9F9F9;
+    margin-left: 104px;
+}
+.buycar {
+    width: 16px;
+    height: 13px;
+    position: absolute;
+    top: 10px;
+    left: 19px;
+    background: url("../images/sprite.png") -1px -59px;
+}
+.arrow {
+    font-family: "consolas";
+    position: absolute;
+    right: 11px;
+    top: 13px;
+    width: 6px;
+    height: 10px;
+    line-height: 10px;
+}
+.count {
+    width: 16px;
+    height: 14px;
+    line-height: 14px;
+    position: absolute;
+    top: -4px;
+    right: 19px;
+    text-align: center;
+    color: #fff;
+    background-color: #C81623;
+    border-radius: 50%;
+    border-bottom-left-radius: 0;
+}
+.cart a {
+    padding-left: 43px;
+}
+.hotwords {
+    height: 28px;
+    line-height: 28px;
+    margin-left: 92px;
+}
+.hotwords a {
+    padding-right: 10px;
+}
+/*search结束*/
+/*nav开始*/
+.nav {
+    height: 44px;
+    border-bottom: 2px solid #B1191A;
+    position: relative;
+    z-index: 3;
+}
+.nav_left {
+    width: 210px;
+    height: 44px;
+    background-color: #B1191A;
+}
+.nav-l-t {
+    height: 44px;
+    line-height: 44px;
+}
+.nav-l-t a {
+    display: block;
+    width: 210px;
+    height: 44px;
+    padding-left: 10px;
+    font-family: "microsoft yahei";
+    font-size: 15px;
+    color: #fff;
+}
+.nav-l-b {
+    width: 209px;
+    height: 466px;
+    background-color: #C81623;
+    border-left: 1px solid #B1191A;
+    border-top: 2px solid #B1191A;
+    /*display: none;*/
+}
+/*.nav_left:hover .nav-l-b {*/
+    /*display: block;*/
+/*}*/
+.nav-l-b li {
+    height: 31px;
+    line-height: 31px;
+}
+.nav-l-b li:hover {
+    background: #fff;
+}
+.nav-l-b li:hover a {
+    color: #B1191A;
+}
+.nav-l-b li a {
+    color: #fff;
+    margin-left: 10px;
+}
+.nav-l-b li span {
+    float: right;
+    margin-right: 10px;
+    font-family: consolas;
+    color: #fff;
+}
+.nav_right {
+    height: 44px;
+    line-height: 44px;
+}
+.nav_right li {
+    float: left;
+}
+.nav_right li a {
+    padding: 0 20px;
+    font-family: "microsoft yahei";
+    font-size: 16px;
+}
+/*nav结束*/
+
+
+/*slogen开始*/
+.slogen {
+    padding: 20px 0;
+    position: relative;
+    background-color: #F5F5F5;
+    height: 54px;
+}
+.slogen span {
+    position: absolute;
+    width: 220px;
+    height: 54px;
+    left: 50%;
+    top: 20px;
+}
+.slogen1 {
+    background: url("../images/slogan1.png");
+    margin-left: -600px;
+}
+.slogen2 {
+    background: url("../images/slogan2.png");
+    margin-left: -300px;
+}
+.slogen3 {
+    background: url("../images/slogan3.png");
+    margin-left: 0px;
+}
+.slogen4 {
+    background: url("../images/slogan4.png");
+    margin-left: 300px;
+}
+/*slogen结束*/
+/*service开始*/
+.service {
+    padding: 14px 0 19px 0;
+    border-bottom: 1px solid #E5E5E5;
+}
+.service dl {
+    width: 199px;
+    float: left;
+}
+.service dl.last {
+    width: 164px;
+}
+.service dt,.coverage h3 {
+    font-family: "microsoft yahei";
+    font-size: 16px;
+    line-height: 36px;
+}
+.service dd {
+    height: 20px;
+    line-height: 20px;
+}
+.coverage {
+    width: 190px;
+    height: 168px;
+    padding-left: 20px;
+    float: left;
+    background: url("../images/china.png") left bottom;
+}
+.coverage p {
+    height: 54px;
+    line-height: 18px;
+}
+/*service结束*/
+/*信息板块开始*/
+.info {
+    padding: 11px 0 32px 0;
+    text-align: center;
+}
+.info .links {
+    height: 36px;
+    line-height: 36px;
+}
+.info .links a {
+    margin: 0 11px 0 12px;
+}
+.info .copyright {
+    line-height: 20px;
+}
+.info .messages {
+    padding-top: 9px;
+}
+.info .messages a {
+    margin-right: 13px;
+}

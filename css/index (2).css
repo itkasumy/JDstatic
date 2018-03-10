@@ -1,0 +1,235 @@
+/*focus��ʼ*/
+.focusBar {
+    padding-top: 12px;
+    position: relative;
+    z-index: 2;
+}
+.focus {
+    width: 730px;
+    height: 454px;
+    margin-left: 220px;
+    position: relative;
+    overflow: hidden;
+}
+.focus:hover .arrow {
+    display: block;    
+}
+.focus ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.focus ul li {
+    float: left;
+    display: none;
+}
+.focus ol {
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    margin-left: -66px;
+}
+.focus ol li {
+    float: left;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #3E3E3E;
+    margin: 0 2px;
+    cursor: pointer;
+}
+.focus ol li.current {
+    background-color: #B61B1F;
+}
+.arrow {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -31px;
+    display: none;
+    height: 0;
+}
+.arrow a {
+    width: 28px;
+    height: 62px;
+    line-height: 62px;
+    font-family: "simsun";
+    font-size: 22px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.arrow .arrl {
+    float: left;
+}
+.arrow .arrr {
+    float: right;
+}
+/*focus����*/
+/*tab����ʼ*/
+.tab {
+    width: 250px;
+    height: 454px;
+}
+.tab .tab-t {
+    width: 248px;
+    height: 372px;
+    border: 1px solid #E4E4E4;
+}
+.tab .tab-t h3 {
+    height: 32px;
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 32px;
+    border-bottom: 1px dashed #E8E8E7;
+    font-family: microsoft yahei;
+}
+.tab .tab-t h3 a {
+    float: right;
+    font-size: 12px;
+}
+.tab-t .news {
+    padding: 5px 0 5px 15px;
+}
+.tab-t .news li {
+    height: 24px;
+    line-height: 24px;
+}
+.tab-t .news span {
+    font-weight: bold;
+}
+.tab-t .goods {
+    width: 248px;
+    height: 208px;
+    overflow: hidden;
+    border-top: 1px solid #E4E4E4;
+}
+.tab-t .goods ul {
+    width: 256px;
+}
+.tab-t .goods li {
+    width: 62px;
+    height: 70px;
+    border: 1px solid #E4E4E4;
+    float: left;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+.tab-t .goods li a {
+    display: block;
+    width: 62px;
+    height: 70px;
+}
+.tab-t .goods li .tel, .tab-t .goods li .plane, .tab-t .goods li .movie, .tab-t .goods li .game, .tab-t .goods li .lottery, .tab-t .goods li .gas, .tab-t .goods li .hotel, .tab-t .goods li .ticket,.tab-t .goods li .donate, .tab-t .goods li .gather, .tab-t .goods li .gift, .tab-t .goods li .credit {
+    width: 25px;
+    height: 27px;
+    margin: 12px 0 0 18px;
+    background: url("../images/icon-tab.png");
+}
+.tab-t .goods li .tel {
+    background-position: 0 0;
+}
+.tab-t .goods li .plane {
+    background-position: 0 -25px;
+}
+.tab-t .goods li .movie {
+    background-position: 0 -50px;
+}
+.tab-t .goods li .game {
+    background-position: 0 -75px;
+}
+.tab-t .goods li .lottery {
+    background-position: 0 -99px;
+}
+.tab-t .goods li .gas {
+    background-position: 0 -124px;
+}
+.tab-t .goods li .hotel {
+    background-position: 0 -149px;
+}
+.tab-t .goods li .ticket {
+    background-position: 0 -174px;
+}
+.tab-t .goods li .donate {
+    background-position: 0 -199px;
+}
+.tab-t .goods li .gather {
+    background-position: 0 -225px;
+}
+.tab-t .goods li .gift {
+    background-position: 0 -249px;
+}
+.tab-t .goods li .credit {
+    background-position: 0 -273px;
+}
+.tab-t .goods li .text{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.tab .tab-b {
+    width: 250px;
+    height: 75px;
+    margin-top: 5px;
+}
+/*tab������*/
+
+/*ÿ���Ƽ���ʼ*/
+.today {
+    padding-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+.today .today-left {
+    width: 210px;
+    height: 151px;
+    float: left;
+}
+.today .today-left a {
+    display: block;
+    width: 210px;
+    height: 151px;
+    background: url("../images/homebg.png") -213px bottom;
+}
+.today .today-right {
+    width: 1000px;
+    height: 165px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.today .today-right:hover .arrow {
+    display: block;
+}
+.today .today-right ul {
+    width: 6024px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.today .today-right li {
+    float: left;
+    width: 1004px;
+}
+.today .today-right li div {
+    margin-right: 1px;
+    float: left;
+}
+/*ÿ���Ƽ�����*/
+/*�󱳾�����*/
+.bg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.bg a {
+    display: block;
+    height: 640px;
+    z-index: 1;
+    background: url("../images/bg1.png") 50% 0 no-repeat;
+}
+/*�󱳾���������*/
